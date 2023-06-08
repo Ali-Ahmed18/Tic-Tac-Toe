@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="game_wrap">
+            <div class="players">
+                <div onclick="choosePlayer(this)" class="player1 bb">
+                    <span>&#10006</span>
+                    <span class="points">-</span>
+                </div>
+                <div onclick="choosePlayer(this)"  class="player2">
+                    <span>O</span>
+                    <span class="points">-</span>
+                </div>
+            </div>
+            <p id="message">star game or select player</p>
+            <div class="gameBox">
+                <div class="container">
+                    <div class="line"></div>
+                    <div onclick="gameBox(this)" class="box bt_0 bl_0"></div>
+                    <div onclick="gameBox(this)" class="box bt_0"></div>
+                    <div onclick="gameBox(this)" class="box bt_0 br_0"></div>
+                    <div onclick="gameBox(this)" class="box bl_0" ></div>
+                    <div onclick="gameBox(this)" class="box"></div>
+                    <div onclick="gameBox(this)" class="box br_0"></div>
+                    <div onclick="gameBox(this)" class="box bl_0 bb_0"></div>
+                    <div onclick="gameBox(this)" class="box bb_0"></div>
+                    <div onclick="gameBox(this)" class="box bb_0 br_0"></div>
+                </div>
+            </div>
+            <div class="restart">
+                <span onclick="restart()">Restart Game</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
